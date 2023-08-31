@@ -48,6 +48,8 @@
 
             <div class="header-links d-none d-md-block">
                 <ul class="navbar list-unstyled d-flex m-0 p-0">
+                  
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                   <li class="nav-item"><a href="" class="nav-link">Policy</a></li>
                   <li class="nav-item"><a href="" class="nav-link">Renewal</a></li>
                   <li class="nav-item"><a href="" class="nav-link">Claim</a></li>
@@ -72,6 +74,7 @@
   </div>
   <div class="offcanvas-body">
     <ul class="navbar list-unstyled m-0 p-0 d-block">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
       <li class="nav-item"><a href="" class="nav-link">Policy</a></li>
       <li class="nav-item"><a href="" class="nav-link">Renewal</a></li>
       <li class="nav-item"><a href="" class="nav-link">Claim</a></li>
@@ -111,9 +114,9 @@
                 <p class="mb-0">Insurance Type : Car Insurance</p>
               </div>
               <div class="filter-user-form">
-                <form class="row row-cols-2 row-cols-sm-1 g-3">
-                  <div class="cols">
-                    <label class="form-label mb-1">Select amount</label>
+                <form class="row g-3">
+                  <div class="col-6 col-sm-12">
+                    <label class="form-label fw-bold mb-1">Select amount</label>
                     <select class="form-select" required>
                       <option selected disabled value="">Choose...</option>
                       <option>0 - 9,999</option>
@@ -122,8 +125,8 @@
                     </select>
                   </div>
       
-                  <div class="cols">
-                    <label class="form-label mb-1">Select time</label>
+                  <div class="col-6 col-sm-12">
+                    <label class="form-label fw-bold mb-1">Select time</label>
                     <select class="form-select" required>
                       <option selected disabled value="">Choose...</option>
                       <option>0 - 5 Years</option>
@@ -131,9 +134,23 @@
                       <option>16 Years - 25 Years</option>
                     </select>
                   </div>
+
+                  <div class="col-md-12">
+                    <label class="form-label fw-bold">Select Policy Type</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Life Insurance</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Non Life Insurance</label>
+                        </div>
+                    </div>
+                  </div>
       
-                  <div class="cols">
-                    <label class="form-label mb-1">Select Insurance type</label>
+                  <div class="col-6 col-sm-12">
+                    <label class="form-label fw-bold mb-1">Select Insurance type</label>
                     <select class="form-select" required>
                       <option disabled value="">Choose...</option>
                       <option selected>Term Life Insurance</option>
@@ -148,8 +165,8 @@
                     </select>
                   </div>
       
-                  <div class="cols">
-                    <label class="form-label mb-1">Select Insurance</label>
+                  <div class="col-6 col-sm-12">
+                    <label class="form-label fw-bold mb-1">Select Insurance</label>
                     <select class="form-select" required>
                       <option selected disabled value="">Choose...</option>
                       <option>Accidental Death Benefit</option>
@@ -160,7 +177,7 @@
                     </select>
                   </div>
       
-                  <div class="cols">
+                  <div class="col-12">
                     <a href="select-policy.html" class="ib-cta-btn">Submit</a>
                   </div>  
       
@@ -168,121 +185,154 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-9 ps-lg-5">
-                <div class="policy-card row row-cols-3 align-items-center mb-3 p-2">
+          <div class="col-12 col-sm-12 col-md-10 col-lg-9">
 
-                  <div class="col-4">
-                    <a href="">
-                      <img src="https://nepallife.com.np/storage/files/nepallife-nepali-600x400.jpg?token=951e81f4a452bb21e6132f2730e9bfff" alt="">
-                      <span>Capital Guarantee Solution</span>
-                    </a>
-  
+            <div class="col-12 mb-4">
+              <div class="row">
+                  <div class="col-12 col-sm-7">
+                      <div class="input-group search-form mb-3">
+                          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                          <button class="btn" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                        </div>
                   </div>
-                  
-                  <div class="col-3">
-                    <p class="mb-2">10 Year Return</p>
-                    <h4 class="fw-bold mb-2">15%</h4>
-                    <span>Whole life mid cap equity form</span>
+                  <div class="col-12 col-sm-5">
+                      <ul class="nav nav-tabs profile-tabs mb-4 mt-4 mt-sm-0 justify-content-center">
+                          <li class="nav-item">
+                          <a href="#recommended" class="nav-link active" data-bs-toggle="tab">Recommended</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="#lifeInsurance" class="nav-link" data-bs-toggle="tab">Life Insurance</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#nonLifeInsurance" class="nav-link" data-bs-toggle="tab">Non Life Insurance</a>
+                          </li>
+                      </ul>
                   </div>
+              </div>
+            </div> 
 
-                  <div class="col-3">
-                    <p class="mb-2">Lumpsum Payout</p>
-                    <h4 class="fw-bold mb-2 ret-amt">1 Cr</h4>
-                    <span>If you invest for 20 years.</span>
-                  </div>
+            <div class="tab-content" >
 
-                  <div class="col-2">
-                    <a href="insurance-detail.html" class="ib-cta-btn">Details</a>
-                  </div>
+                <div class="tab-pane fade show active" id="recommended">
+
+                      <div class="policy-card row row-cols-3 align-items-center mb-3 p-2">
+
+                        <div class="col-4">
+                          <a href="">
+                            <img src="https://nepallife.com.np/storage/files/nepallife-nepali-600x400.jpg?token=951e81f4a452bb21e6132f2730e9bfff" alt="">
+                            <span>Capital Guarantee Solution</span>
+                          </a>
+
+                        </div>
+                        
+                        <div class="col-3">
+                          <p class="mb-2">10 Year Return</p>
+                          <h4 class="fw-bold mb-2">15%</h4>
+                          <span>Whole life mid cap equity form</span>
+                        </div>
+
+                        <div class="col-3">
+                          <p class="mb-2">Lumpsum Payout</p>
+                          <h4 class="fw-bold mb-2 ret-amt">1 Cr</h4>
+                          <span>If you invest for 20 years.</span>
+                        </div>
+
+                        <div class="col-2">
+                          <a href="insurance-detail.html" class="ib-cta-btn">Details</a>
+                        </div>
+
+                      </div>
+
+                      <div class="policy-card row row-cols-3 align-items-center mb-3 p-2">
+
+                        <div class="col-4">
+                          <a href="">
+                            <img src="https://bizpati.com/uploads/profiles/18a4f6e63db8b1cfe8016d60e480620d.jpg" alt="">
+                            <span>Capital Guarantee Solution</span>
+                          </a>
+
+                        </div>
+                        
+                        <div class="col-3">
+                          <p class="mb-2">10 Year Return</p>
+                          <h4 class="fw-bold mb-2">15%</h4>
+                          <span>Whole life mid cap equity form</span>
+                        </div>
+
+                        <div class="col-3">
+                          <p class="mb-2">Lumpsum Payout</p>
+                          <h4 class="fw-bold mb-2 ret-amt">1 Cr</h4>
+                          <span>If you invest for 20 years.</span>
+                        </div>
+
+                        <div class="col-2">
+                          <a href="insurance-detail.html" class="ib-cta-btn">Details</a>
+                        </div>
+
+                      </div>
+
+                      <div class="policy-card row row-cols-3 align-items-center mb-3 p-2">
+
+                        <div class="col-4">
+                          <a href="">
+                            <img src="https://citizenlifenepal.com/wp-content/themes/citizen-life/theme-files/img/citizenlife-logo.png" alt="">
+                            <span>Capital Guarantee Solution</span>
+                          </a>
+
+                        </div>
+                        
+                        <div class="col-3">
+                          <p class="mb-2">10 Year Return</p>
+                          <h4 class="fw-bold mb-2">15%</h4>
+                          <span>Whole life mid cap equity form</span>
+                        </div>
+
+                        <div class="col-3">
+                          <p class="mb-2">Lumpsum Payout</p>
+                          <h4 class="fw-bold mb-2 ret-amt">1 Cr</h4>
+                          <span>If you invest for 20 years.</span>
+                        </div>
+
+                        <div class="col-2">
+                          <a href="insurance-detail.html" class="ib-cta-btn">Details</a>
+                        </div>
+
+                      </div>
+
+                      <div class="policy-card row row-cols-3 align-items-center mb-3 p-2">
+
+                        <div class="col-4">
+                          <a href="">
+                            <img src="https://siddharthainsurance.com/backend/web/Logo/siddhartha-preimer-logo1678604769.jpg" alt="">
+                            <span>Capital Guarantee Solution</span>
+                          </a>
+
+                        </div>
+                        
+                        <div class="col-3">
+                          <p class="mb-2">10 Year Return</p>
+                          <h4 class="fw-bold mb-2">15%</h4>
+                          <span>Whole life mid cap equity form</span>
+                        </div>
+
+                        <div class="col-3">
+                          <p class="mb-2">Lumpsum Payout</p>
+                          <h4 class="fw-bold mb-2 ret-amt">1 Cr</h4>
+                          <span>If you invest for 20 years.</span>
+                        </div>
+
+                        <div class="col-2">
+                          <a href="insurance-detail.html" class="ib-cta-btn">Details</a>
+                        </div>
+
+                      </div>
+                      
+                </div>
+                <div class="tab-pane fade" id="lifeInsurance">
 
                 </div>
 
-                <div class="policy-card row row-cols-3 align-items-center mb-3 p-2">
-
-                  <div class="col-4">
-                    <a href="">
-                      <img src="https://bizpati.com/uploads/profiles/18a4f6e63db8b1cfe8016d60e480620d.jpg" alt="">
-                      <span>Capital Guarantee Solution</span>
-                    </a>
-  
-                  </div>
-                  
-                  <div class="col-3">
-                    <p class="mb-2">10 Year Return</p>
-                    <h4 class="fw-bold mb-2">15%</h4>
-                    <span>Whole life mid cap equity form</span>
-                  </div>
-
-                  <div class="col-3">
-                    <p class="mb-2">Lumpsum Payout</p>
-                    <h4 class="fw-bold mb-2 ret-amt">1 Cr</h4>
-                    <span>If you invest for 20 years.</span>
-                  </div>
-
-                  <div class="col-2">
-                    <a href="insurance-detail.html" class="ib-cta-btn">Details</a>
-                  </div>
-
-                </div>
-
-                <div class="policy-card row row-cols-3 align-items-center mb-3 p-2">
-
-                  <div class="col-4">
-                    <a href="">
-                      <img src="https://citizenlifenepal.com/wp-content/themes/citizen-life/theme-files/img/citizenlife-logo.png" alt="">
-                      <span>Capital Guarantee Solution</span>
-                    </a>
-  
-                  </div>
-                  
-                  <div class="col-3">
-                    <p class="mb-2">10 Year Return</p>
-                    <h4 class="fw-bold mb-2">15%</h4>
-                    <span>Whole life mid cap equity form</span>
-                  </div>
-
-                  <div class="col-3">
-                    <p class="mb-2">Lumpsum Payout</p>
-                    <h4 class="fw-bold mb-2 ret-amt">1 Cr</h4>
-                    <span>If you invest for 20 years.</span>
-                  </div>
-
-                  <div class="col-2">
-                    <a href="insurance-detail.html" class="ib-cta-btn">Details</a>
-                  </div>
-
-                </div>
-
-                <div class="policy-card row row-cols-3 align-items-center mb-3 p-2">
-
-                  <div class="col-4">
-                    <a href="">
-                      <img src="https://siddharthainsurance.com/backend/web/Logo/siddhartha-preimer-logo1678604769.jpg" alt="">
-                      <span>Capital Guarantee Solution</span>
-                    </a>
-  
-                  </div>
-                  
-                  <div class="col-3">
-                    <p class="mb-2">10 Year Return</p>
-                    <h4 class="fw-bold mb-2">15%</h4>
-                    <span>Whole life mid cap equity form</span>
-                  </div>
-
-                  <div class="col-3">
-                    <p class="mb-2">Lumpsum Payout</p>
-                    <h4 class="fw-bold mb-2 ret-amt">1 Cr</h4>
-                    <span>If you invest for 20 years.</span>
-                  </div>
-
-                  <div class="col-2">
-                    <a href="insurance-detail.html" class="ib-cta-btn">Details</a>
-                  </div>
-
-                </div>
-
-                
-          </div>
+    </div>
         </div>
       </div>
     </section>
@@ -392,7 +442,7 @@
                   </div>
                 </div>
                 <div class="col-sm-5 text-end">
-                  <a href="" class="fw-bold" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot Password?</a>
+                  <a href="" class="fw-bold" data-bs-toggle="modal" data-bs-target="">Forgot Password?</a>
                 </div>
               </div>
               <div class="row">
@@ -405,8 +455,8 @@
     
             <div class="social-login-section py-3 text-center">
               <p class="text-center">OR</p>
-              <button class="btn text-white google-btn"><i class="bi bi-google"></i> Login with Google</button>
-              <button class="btn text-white facebook-btn"><i class="bi bi-facebook"></i> Login with Facebook</button>
+              <button class="btn text-white google-btn mb-2 w-100 w-md-auto"><i class="bi bi-google"></i> Login with Google</button>
+              <button class="btn text-white facebook-btn mb-2 w-100 w-md-auto"><i class="bi bi-facebook"></i> Login with Facebook</button>
             </div>
     
             

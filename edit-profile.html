@@ -133,10 +133,10 @@
                     <ul class="nav nav-tabs profile-tabs mb-4 mt-4 mt-sm-0">
                        
                         <li class="nav-item">
-                            <a href="#Profile" class="nav-link" data-bs-toggle="tab">Profile</a>
+                            <a href="#Profile" class="nav-link active" data-bs-toggle="tab">Profile</a>
                         </li>
                         <li class="nav-item">
-                          <a href="#Policies" class="nav-link active" data-bs-toggle="tab">Policies</a>
+                          <a href="#Policies" class="nav-link" data-bs-toggle="tab">Policies</a>
                       </li>
                         <li class="nav-item">
                             <a href="#Payments" class="nav-link" data-bs-toggle="tab">Payments</a>
@@ -144,96 +144,104 @@
                     </ul>
                     <div class="tab-content">
                        
-                        <div class="tab-pane fade" id="Profile">
+                        <div class="tab-pane fade show active" id="Profile">
                           <div class="profile-section-heading mb-5" id="profile-personal-details">
                             <h6 class="mb-3">Personal Details</h6>
                             <div class="profile-personal-details">
-                                <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                  <label class="fw-bold">Full name</label> <span>Nirajan Dahal</span>
-                                </p>
-                                <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                  <label class="fw-bold">Mobile number</label> <span>+977 98621 55336</span>
-                                </p>
-                                <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                  <label class="fw-bold">Email Address</label> <span>nirajandahal22@gmail.com</span>
-                                </p>
-                                <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                  <label class="fw-bold">Date of birth</label> <span>15-12-1990</span>
-                                </p>
-                                <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                  <label class="fw-bold">Annual Income</label> <span>10,00,000 - 15,00,000</span>
-                                </p>
-                                <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                  <label class="fw-bold">Marital Status</label> <span>Married</span>
-                                </p>
-                                <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                  <label class="fw-bold">Permanent Address</label> <span>Biratnagar - 4, Nepal</span>
-                                </p>
+                                <form>
+                                    <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
+                                    <label class="fw-bold w-25">Full name</label>
+                                    <input type="text" class="form-control" placeholder ="Nirajan Dahal" required>
+                                    </p>
+                                    <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
+                                    <label class="fw-bold w-25">Mobile number</label>
+                                    <input type="number" class="form-control" placeholder ="+977 98621 55336" required>
+                                    </p>
+                                    <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
+                                    <label class="fw-bold w-25">Email Address</label>
+                                    <input type="email" class="form-control" placeholder ="nirajandahal22@gmail.com" required>
+                                    </p>
+                                    <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
+                                    <label class="fw-bold w-25">Date of birth</label>
+                                    <input type="date" class="form-control" required>
+                                    </p>
+                                    <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
+                                    <label class="fw-bold w-25">Annual Income</label>
+                                    <input type="number" class="form-control" placeholder ="10,00,000 - 15,00,000" required>
+                                    </p>
+                                    <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
+                                    <label class="fw-bold w-25">Marital Status</label>
+                                    <input type="text" class="form-control" placeholder ="Married" required>
+                                    </p>
+                                    <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
+                                    <label class="fw-bold w-25">Permanent Address</label>
+                                    <input type="text" class="form-control" placeholder ="Biratnagar - 4, Nepal" required>
+                                    </p>
+                                    <p class="text-end">
+                                        <input type="submit" class="ib-cta-btn border-0" value="Save">
+                                    </p> 
+                                </form>
                             </div>
-                            <p class="text-end">
-                              <input type="submit" class="ib-cta-btn border-0 py-1 px-3" value="Edit">
-                          </p> 
                         </div>
                         <div class="profile-section-heading mb-5" id="profile-contact-details">
                           <h6 class="mb-3">Contact Details</h6>
                           <div class="profile-personal-details">
+                            <form>
                               <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                <label class="fw-bold">Mobile number 1</label> <span>+977 98621 55336</span>
+                                <label class="fw-bold w-25">Mobile number 1</label>
+                                <input type="number" class="form-control" placeholder ="+977 98621 55336" required>
                               </p>
                               <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                <label class="fw-bold">Mobile number 2</label> <span>+977 98621 55336</span>
+                                <label class="fw-bold w-25">Mobile number 2</label>
+                                <input type="number" class="form-control" placeholder ="+977 98621 55336" required>
                               </p>
                               <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                <label class="fw-bold">Email Address</label> <span>nirajandahal22@gmail.com</span>
+                                <label class="fw-bold w-25">Email Address</label>
+                                <input type="email" class="form-control" placeholder ="nirajandahal22@gmail.com" required>
                               </p>
                               <p class="profile-item-info mb-2 py-1 d-flex justify-content-between">
-                                <label class="fw-bold">Permanent Address</label> <span>Biratnagar - 4, Nepal</span>
+                                <label class="fw-bold w-25">Permanent Address</label>
+                                <input type="text" class="form-control" placeholder ="Biratnagar - 4, Nepal" required>
                               </p>
+                              <p class="text-end">
+                                <input type="submit" class="ib-cta-btn border-0" value="Save">
+                            </p> 
+                              </form>
                           </div>
-                          <p class="text-end">
-                            <input type="submit" class="ib-cta-btn border-0 py-1 px-3" value="Edit">
-                        </p> 
                         </div>
 
                         <div class="profile-section-heading mb-5" id="profile-family-details">
                           <h6 class="mb-3">Family Details</h6>
                           <div class="profile-personal-details">
-                              <table class="table">
-                                <tr>
-                                  <th>Name</th>
-                                  <th>Relation</th>
-                                  <th>Date of Birth</th>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    Thomas Cat
-                                  </td>
-                                  <td>
-                                    Husband
-                                  </td>
-                                  <td>
-                                    15-06-1991
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    Jerry Mouse
-                                  </td>
-                                  <td>
-                                    Friend
-                                  </td>
-                                  <td>
-                                    15-06-1991
-                                  </td>
-                                </tr>
-                              </table>
-                              <p class="text-end">
-                                <input type="submit" class="ib-cta-btn border-0 py-1 px-3" value="Edit">
-                            </p> 
+                             <form>
+                              <p class="profile-item-info mb-2 py-1">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <label class="fw-bold">Full name</label>
+                                        <input type="text" class="form-control" placeholder ="Nirajan Dahal" required>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <label class="fw-bold">Relation</label>
+                                        <input type="text" class="form-control" placeholder ="Friend" required>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <label class="fw-bold">Date of Birth</label>
+                                        <input type="date" class="form-control" placeholder ="Nirajan Dahal" required>
+                                    </div>
+                                </div>
+                              </p>
+                                <button class="btn btn-info">
+                                    <i class="bi bi-plus-circle"></i> Add
+                                </button>
+                                <p class="text-end">
+                                    <input type="submit" class="ib-cta-btn border-0" value="Save">
+                                </p> 
+                               </form> 
+                                
                           </div>
                         </div>
                         </div>
-                        <div class="tab-pane fade show active" id="Policies">
+                        <div class="tab-pane fade " id="Policies">
                           <div class="policy-card align-items-center mb-3 p-2">
                             <h5 class="mb-0">Life insurance</h5>
                               <div>
